@@ -1,23 +1,21 @@
 html {
   height: 100%;
   width: 100%;
-  text-align:center
 }
-header {
-  color: black;
-}
-body{
-  color : Blue
-}
-body { 
-      text-align: left; 
-    }
-    h1, h2 { 
-      text-align: center; 
-    }
-    .centered-text { 
-      text-align: center;
-      margin: 0 auto; 
-    }
 
+body {
+  color: blue;
+}
 
+h1,
+h2 {
+  text-align: center;
+}
+
+.centered-text {
+  text-align: center;
+  margin: 0 auto;
+}
+about-blog {
+  text-align: left;
+}
