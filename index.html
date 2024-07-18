@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <title> The Model Rocket Man</title>
+  <title>The Model Rocket Man</title>
   <style>
     html {
       height: 100%;
@@ -16,30 +16,62 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: all;
-      color: red;
+      color: white;
+      /* Adjust text color for readability over background */
       font-family: sans-serif;
       padding: 20px;
+      display: flex;
+      /* Flexbox for vertical layout */
+      flex-direction: column;
+      /* Stack elements vertically */
     }
 
     header {
       color: black;
       text-align: center;
+      flex: 1;
+      /* Allocate space for header content */
+    }
+
+    h1,
+    p {
+      margin: 0;
+      /* Remove default margin for better spacing */
+    }
+
+    nav {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: black;
+      margin-right: 10px;
+      font-weight: bold;
     }
 
     .container {
-      /* New container for centered content */
+      flex: 2;
+      /* Allocate more space for main content */
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
     }
 
-    .blog-post {
-      /* New class for blog post text */
-      text-align: left;
-      margin-top: 20px;
-      /* Optional: add space above the blog post */
+    .about-blog {
+      flex: 0 0 25%;
+      /* Set fixed width for About the Blog section */
+      padding: 20px;
+      border-radius: 5px;
+      background-color: rgba(255, 255, 255, 0.8);
+      /* Semi-transparent white background */
+      margin: 20px;
+    }
+
+    h2,
+    p {
+      color: black;
+      /* Black text for both headings and paragraphs */
     }
   </style>
 </head>
@@ -48,45 +80,24 @@
 
   <div class="container">
     <header>
-      <h1>The Model Rocket Man</h1>
-      <p>Learn about the fascinating world of model rockets and build your own!</p>
+      <h1> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Model Rocket Man</h1>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learn about the fascinating world of model rockets and build your own!</p>
     </header>
 
     <nav>
-
       <a href="types.html" target="_blank">Types</a>
       <a href="blog.html" target="_blank">Our Blog</a>
       <a href="types-of-model-rockets.html" target="_blank">Overview of Model Rockets</a>
     </nav>
+
+    <section class="about-blog">
+      <h2>About the Blog</h2>
+      <p>Welcome to The Model Rocket Man blog! This is a blog I, a very passionate model rocketry enthusist, where we will dive into the exciting world of model rocketry. We'll cover various topics, from beginner tips and rockets to amore advanced thinsg like dual stage rockets. Stay tuned for updates!</p>
+    </section>
+
   </div>
 
-  <p class="blog-post">Check out our most recent blog posts:</p>
-
 </body>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
+</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 </html>
