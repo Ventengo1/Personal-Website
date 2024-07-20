@@ -3,40 +3,45 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Model Rocket Man</title>
   <style>
-    html {
-      height: 100%;
-      width: 100%;
+    /* Global styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      background-image: url("https://estesrockets.com/cdn/shop/files/Rockets_Category_800x800_3986c3f0-3ed5-46bf-b5c6-a006cc826b19.webp?v=1681412728&width=750");
-      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://estesrockets.com/cdn/shop/files/Rockets_Category_800x800_3986c3f0-3ed5-46bf-b5c6-a006cc826b19.webp?v=1681412728&width=750");
       background-size: cover;
-      background-position: all;
+      background-position: center;
       color: white;
-      /* Adjust text color for readability over background */
-      font-family: sans-serif;
-      padding: 20px;
+      min-height: 100vh;
       display: flex;
-      /* Flexbox for vertical layout */
       flex-direction: column;
-      /* Stack elements vertically */
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      /* Added padding for top and bottom space */
     }
 
     header {
-      color: black;
-      text-align: center;
-      flex: 1;
-      /* Allocate space for header content */
+      margin-bottom: 40px;
     }
 
-    h1,
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+    }
+
     p {
-      margin: 0;
-      /* Remove default margin for better spacing */
+      font-size: 1.2rem;
+      margin-bottom: 20px;
     }
 
     nav {
@@ -47,56 +52,96 @@
 
     nav a {
       text-decoration: none;
-      color: black;
+      color: white;
       margin-right: 10px;
       font-weight: bold;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      padding: 5px 10px;
+      border: 1px solid white;
+      border-radius: 3px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
     }
 
     .container {
-      flex: 2;
-      /* Allocate more space for main content */
+      max-width: 1200px;
+      margin: 20px auto;
+      /* Adjusted margin for container */
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 20px;
     }
 
-    .about-blog,
-    .why-model-rockets {
-      flex: 0 0 25%;
-      /* Set fixed width for sections */
+    .section {
+      flex: 1 1 300px;
+      background-color: rgba(255, 255, 255, 0.8);
       padding: 20px;
       border-radius: 5px;
-      background-color: rgba(255, 255, 255, 0.8);
-      /* Semi-transparent white background */
       margin: 20px;
+      text-align: left;
     }
 
-    h2,
-    p {
-      color: black;
-      /* Black text for both headings and paragraphs */
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        position: static;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section {
+        width: 100%;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <header>
+    <h1>The Model Rocket Man</h1>
+    <p>Learn about the fascinating world of model rockets and build your own!</p>
+  </header>
+
+  <nav>
+    <a href="types.html" target="_blank">Types</a>
+    <a href="blog.html" target="_blank">Our Blog</a>
+    <a href="types-of-model-rockets.html" target="_blank">Overview of Model Rockets</a>
+  </nav>
+
   <div class="container">
-    <header>
-      <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The Model Rocket Man</h1>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Learn about the fascinating world of model rockets and build your own!</p>
-    </header>
 
-    <nav>
-      <a href="types.html" target="_blank">Types</a>
-      <a href="blog.html" target="_blank">Our Blog</a>
-      <a href="types-of-model-rockets.html" target="_blank">Overview of Model Rockets</a>
-    </nav>
-
-    <section class="about-blog">
+    <section class="section">
       <h2>About the Blog</h2>
-      <p>Welcome to The Model Rocket Man blog! This is a blog I, a very passionate model rocketry enthusiast, where we will dive into the exciting world of model rocketry. We'll cover various topics, from beginner tips and tricks to advanced rocket building techniques. Stay tuned for regular updates and ignite your passion for model rockets!<br></p>
+      <p>Welcome to The Model Rocket Man blog! This is a blog for passionate model rocketry enthusiasts where we explore the exciting world of model rocketry. From beginner guides to advanced techniques, stay tuned for regular updates and ignite your passion for model rockets!</p>
     </section>
 
-    <section class="why-model-rockets">
+    <section class="section">
       <h2>Why Model Rockets Are Interesting?</h2>
-      <p>Model rockets offer a unique blend of science, technology, engineering, and math (STEM) concepts in a fun and hands-on way. Here are some reasons why model rocketry is so interesting.
-      </p>
+      <p>Model rockets offer a unique blend of science, technology, engineering, and math (STEM) concepts in a fun and hands-on way. Discover why model rocketry is an engaging hobby for enthusiasts of all ages.</p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
