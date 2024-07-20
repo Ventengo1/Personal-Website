@@ -1,24 +1,106 @@
-html {
-  height: 100%;
-  width: 100%;
-}
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
 
-body {
-  color: blue;
-}
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url("https://estesrockets.com/cdn/shop/files/Rockets_Category_800x800_3986c3f0-3ed5-46bf-b5c6-a006cc826b19.webp?v=1681412728&width=750");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted to start content at the top */
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px 40px; /* Increased top padding for more space */
+  }
 
-h1,
-h2 {
-  text-align: center;
-}
+  header {
+    margin-bottom: 40px;
+    margin-top: 20px; /* Added margin-top to move header down */
+  }
 
-.centered-text {
-  text-align: center;
-  margin: 0 auto;
-}
-about-blog {
-  text-align: left;
-}
-why-model-rocket {
-  text-align: right;
-}
+  h1, h2 {
+    margin-top: 0; /* Ensure h1 and h2 start at the top of their sections */
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 20px auto;
+    /* Adjusted margin for container */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .section {
+    flex: 1 1 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    text-align: left;
+  }
+
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: static;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .section {
+      width: 100%;
+    }
+  }
+</style>
